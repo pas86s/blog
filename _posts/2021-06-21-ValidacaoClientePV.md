@@ -1,9 +1,9 @@
---------
+---
 layout: post
 title: Validação de Cliente/Fornecedor em Pedidos de Venda!
 published: true
 tags: Protheus pedido venda cliente validação
---------
+---
 
 Olá pessoal, bem vindos ao nosso primeiro post.
 
