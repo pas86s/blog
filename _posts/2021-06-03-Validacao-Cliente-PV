@@ -19,7 +19,7 @@ Então acrescentamos as seguintes validações no dicionário de dados do pedido
 
 Campo SX3  | Validação de Usuário
 ---------  | --------------------
-C5_CLIENTE | `EXISTCPO(IIF(M->C5_TIPO $ "DB","SA2","SA1"),M->C5_CLIENTE)`
-C5_LOJACLI | `EXISTCPO(IIF(M->C5_TIPO $ "DB","SA2","SA1"),M->C5_CLIENTE+M->C5_LOJACLI)`
+`C5_CLIENTE` | `EXISTCPO(IIF(M->C5_TIPO $ "DB","SA2","SA1"),M->C5_CLIENTE)`
+`C5_LOJACLI` | `EXISTCPO(IIF(M->C5_TIPO $ "DB","SA2","SA1"),M->C5_CLIENTE+M->C5_LOJACLI)`
 
 É isto: problema resolvido.
