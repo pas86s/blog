@@ -95,12 +95,12 @@ E se houver a necessidade de usar um aplicativo que está instalado na máquina 
 		CpyT2S("c:\temp\arqSaida.pdf", "\temp\", .t.)
 
 É importante lembrar que, conforme o cliente nem todas as funções estarão disponíveis para uso:
-Function | Smartclient.exe  | Smartclient Web | Job de Schedule
----------  | ------------------ | ----------------- | ----------------
-`cpys2t` | Ok | Não disponível | Não disponível  
-`cpys2tex` | Ok | Não disponível | Não disponível  
-`cpyt2s` | Ok | Não disponível | Não disponível  
-`shellexecute`| Ok | Não disponível | Não disponível  
+| Function | Smartclient.exe  | Smartclient Web | Job de Schedule |
+|---------  | ------------------ | ----------------- | ----------------|
+|`cpys2t` | Ok | Não disponível | Não disponível  |
+|`cpys2tex` | Ok | Não disponível | Não disponível | 
+|`cpyt2s` | Ok | Não disponível | Não disponível  |
+|`shellexecute`| Ok | Não disponível | Não disponível |  
 
 Referências:
 [BlackTDN](http://www.blacktdn.com.br/2011/04/protheus-executando-aplicacoes-externas.html)
@@ -122,6 +122,8 @@ Referências:
 [CpyT2S](https://tdn.totvs.com/display/tec/CpyT2S)
 
 [CpyS2TEX](https://tdn.totvs.com/display/tec/CpyS2TEX)
+
+[IsBlink](https://tdn.totvs.com/pages/releaseview.action?pageId=6814878)
 
 [PDF Toolkit](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)
 
