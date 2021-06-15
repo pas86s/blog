@@ -24,6 +24,7 @@ Existem também, conforme o cliente algumas restrições no que é possível ser
 * No smartclient web não estão disponíveis várias funções/comandos Advpl que trabalham com arquivos do sistema operacional
 
 Então considerando o caso mais simples, utilizando o aplicativo smartclient.exe no cliente em uma máquina Windows e appserver no servidor podemos utilizar as seguintes funções para executar aplicativos:
+
 1) No cliente:
 	ShellExecute( cAcao, cArquivo, cParam, cDirTrabalho, [ nOpc ] )	
 	Onde:
@@ -52,6 +53,7 @@ Então considerando o caso mais simples, utilizando o aplicativo smartclient.exe
 		
 	WaitRun (uso detalhado nas referências)
 	WinExec (uso detalhado nas referências)
+
 2) No servidor
 	WaitRunSrv( cCommandLine , lWaitRun , cPath ) : lSuccess	
 	Onde: 
@@ -63,6 +65,7 @@ Então considerando o caso mais simples, utilizando o aplicativo smartclient.exe
 		`WaitRunSrv( "c:\pastaservidor\pdftk.exe arqEntrada1.pdf arqEntrada2.pdf cat output arqSaida.pdf", .t. "c:\pastaservidor\")`	
 	
 E se houver a necessidade de usar um aplicativo que está instalado na máquina do usuário, mas o arquivo que vai ser usado neste aplicativo está no servidor? Neste caso utilizam-se de funções que copiam os arquivos de um lado para o outro (no caso copie o arquivo que vai ser usado do servidor para o cliente). São estas as funções:
+
 	* CpyS2T( cFile, cFolder, [ lCompress ], [ lChangeCase ] ) : lSuccess
 	Onde: 
 	cFile		: Indica o arquivo no servidor que será copiado (a partir do rootpath).
