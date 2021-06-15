@@ -70,8 +70,8 @@ E se houver a necessidade de usar um aplicativo que está instalado na máquina 
 	lCompress	: O arquivo deve ser compactado antes na cópia (.t.) -> melhora a performance conforme o tamanho do arquivo;
 	lChangeCase	: Converter o nome do arquivo para minúsculas (.t.). Se .f. mantém o nome sem alteração de maiúsculas ou minúsculas; 
 	Exemplos:
-		`CpyS2T("\temp\arqEntrada1.pdf", "c:\temp\", .t.)`
-		`CpyS2T("\temp\arqEntrada2.pdf", "c:\temp\", .t.)`
+		CpyS2T("\temp\arqEntrada1.pdf", "c:\temp\", .t.)
+		CpyS2T("\temp\arqEntrada2.pdf", "c:\temp\", .t.)
 
 	* CpyS2TEx( cFile, cFolder, [ lCompress ], [ lChangeCase ] ) : lSuccess
 	Onde: 
@@ -80,7 +80,7 @@ E se houver a necessidade de usar um aplicativo que está instalado na máquina 
 	lCompress	: O arquivo deve ser compactado antes na cópia (.t.) -> melhora a performance conforme o tamanho do arquivo;
 	lChangeCase	: Converter o nome do arquivo para minúsculas (.t.). Se .f. mantém o nome sem alteração de maiúsculas ou minúsculas; 
 	Exemplo:
-		`CpyS2TEx("c:\pastaprotheusservidor\temp\arqEntrada1.pdf", "c:\temp\", .t.)`
+		CpyS2TEx("c:\pastaprotheusservidor\temp\arqEntrada1.pdf", "c:\temp\", .t.)
 
 	* CpyT2S( cFile, cFolder, [ lCompress ], [ lChangeCase ] ) : lSuccess
 	Onde: 
@@ -89,28 +89,36 @@ E se houver a necessidade de usar um aplicativo que está instalado na máquina 
 	lCompress	: O arquivo deve ser compactado antes na cópia (.t.) -> melhora a performance conforme o tamanho do arquivo;
 	lChangeCase	: Converter o nome do arquivo para minúsculas (.t.). Se .f. mantém o nome sem alteração de maiúsculas ou minúsculas; 
 	Exemplo:
-		`CpyT2S("c:\temp\arqSaida.pdf", "\temp\", .t.)`
+		CpyT2S("c:\temp\arqSaida.pdf", "\temp\", .t.)
 
 É importante lembrar que, conforme o cliente nem todas as funções estarão disponíveis para uso:
 Function | Smartclient.exe  | Smartclient Web | Job de Schedule
----------  | ------------------ | ----------------- | -----------------
+---------  | ------------------ | ----------------- | ----------------
 `cpys2t` | Ok | Não disponível | Não disponível  
 `cpys2tex` | Ok | Não disponível | Não disponível  
 `cpyt2s` | Ok | Não disponível | Não disponível  
 `shellexecute`| Ok | Não disponível | Não disponível  
 
-Referências
+Referências:
 [BlackTDN](http://www.blacktdn.com.br/2011/04/protheus-executando-aplicacoes-externas.html)
 
-
 [Tudo em AdvPL](https://siga0984.wordpress.com/2016/09/14/aplicacoes-externas-no-advpl-parte-01/)
+
 [Tudo em AdvPL](https://siga0984.wordpress.com/2016/09/26/aplicacoes-externas-no-advpl-parte-02/)
+
 [WinExec](http://tdn.totvs.com/display/tec/WinExec)
+
 [WaitRun](http://tdn.totvs.com/display/tec/WaitRun)
+
 [ShellExecute](http://tdn.totvs.com/display/tec/ShellExecute)
+
 [StartJob](https://tdn.totvs.com/display/tec/StartJob)
+
 [CpyS2T](https://tdn.totvs.com/display/tec/CpyS2T)
+
 [CpyT2S](https://tdn.totvs.com/display/tec/CpyT2S)
+
 [CpyS2TEX](https://tdn.totvs.com/display/tec/CpyS2TEX)
+
 [PDF Toolkit](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)
 
