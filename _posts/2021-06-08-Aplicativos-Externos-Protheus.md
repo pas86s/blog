@@ -8,6 +8,7 @@ tags: Protheus client server
 Olá novamente!
 
 O Totvs Protheus é um ERP que funciona numa arquitetura Client/Server (em português Cliente/Servidor). Normalmente os usuários nem se dão conta da complexidade desta da estrutura. Esta também é uma "fonte" de problemas pois se uma das 2 partes (cliente ou servidor) apresentar problemas o sistema deixa de funcionar. Uma demonstração simples de cliente e servidor são os relatórios que podem ser impressos a partir da impressora do cliente ou da impressora do servidor.
+
 ![Aplicativo Smarclient]({{ site.baseurl }}/images/pAplicativos1.png)
 ![Serviços do Server]({{ site.baseurl }}/images/pAplicativos2.png)
 
@@ -26,6 +27,7 @@ Existem também, conforme o cliente algumas restrições no que é possível ser
 Então considerando o caso mais simples, utilizando o aplicativo smartclient.exe no cliente em uma máquina Windows e appserver no servidor podemos utilizar as seguintes funções para executar aplicativos:
 
 1) No cliente:
+
 	ShellExecute( cAcao, cArquivo, cParam, cDirTrabalho, [ nOpc ] )	
 	Onde:
 	cAcao	 		: Indica o nome da ação que será executada.
@@ -49,12 +51,12 @@ Então considerando o caso mais simples, utilizando o aplicativo smartclient.exe
 		`ShellExecute( "open", "c:\temp\arquivo.txt", "", "c:\temp\", 1)`	
 		`ShellExecute( "open", "c:\temp\pdftk.exe", "arqEntrada1.pdf arqEntrada2.pdf cat output arqSaida.pdf", "c:\temp\", 1)`	
 		`ShellExecute( "open", "c:\temp\pdftk.exe arqEntrada1.pdf arqEntrada2.pdf cat output arqSaida.pdf", "", "c:\temp\", 1)`	
-		
-		
+	
 	WaitRun (uso detalhado nas referências)
 	WinExec (uso detalhado nas referências)
 
 2) No servidor
+
 	WaitRunSrv( cCommandLine , lWaitRun , cPath ) : lSuccess	
 	Onde: 
 	cCommandLine : Instrução a ser executada
@@ -95,12 +97,13 @@ E se houver a necessidade de usar um aplicativo que está instalado na máquina 
 		CpyT2S("c:\temp\arqSaida.pdf", "\temp\", .t.)
 
 É importante lembrar que, conforme o cliente nem todas as funções estarão disponíveis para uso:
-| Function | Smartclient.exe  | Smartclient Web | Job de Schedule |
-|---------  | ------------------ | ----------------- | ----------------|
-|`cpys2t` | Ok | Não disponível | Não disponível  |
-|`cpys2tex` | Ok | Não disponível | Não disponível | 
-|`cpyt2s` | Ok | Não disponível | Não disponível  |
-|`shellexecute`| Ok | Não disponível | Não disponível |  
+
+ Function | Smartclient.exe  | Smartclient Web | Job de Schedule 
+---------  | ------------------ | ----------------- | ----------------
+`cpys2t` | Ok | Não disponível | Não disponível
+`cpys2tex` | Ok | Não disponível | Não disponível
+`cpyt2s` | Ok | Não disponível | Não disponível
+`shellexecute`| Ok | Não disponível | Não disponível
 
 Referências:
 [BlackTDN](http://www.blacktdn.com.br/2011/04/protheus-executando-aplicacoes-externas.html)
@@ -123,7 +126,7 @@ Referências:
 
 [CpyS2TEX](https://tdn.totvs.com/display/tec/CpyS2TEX)
 
-[IsBlink](https://tdn.totvs.com/pages/releaseview.action?pageId=6814878)
+[IsBlind](https://tdn.totvs.com/pages/releaseview.action?pageId=6814878)
 
 [PDF Toolkit](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)
 
