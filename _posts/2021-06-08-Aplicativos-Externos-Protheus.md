@@ -99,7 +99,7 @@ E se houver a necessidade de usar um aplicativo que está instalado na máquina 
 É importante lembrar que, conforme o cliente nem todas as funções estarão disponíveis para uso:
 
  Function | Smartclient.exe  | Smartclient Web | Job de Schedule 
----------  | ------------------ | ----------------- | ----------------
+--------- | ---------------- | --------------- | ----------------
 `cpys2t` | Ok | Não disponível | Não disponível
 `cpys2tex` | Ok | Não disponível | Não disponível
 `cpyt2s` | Ok | Não disponível | Não disponível
