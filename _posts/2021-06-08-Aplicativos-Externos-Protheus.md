@@ -106,7 +106,7 @@ E se houver a necessidade de usar um aplicativo que está instalado na máquina 
 `shellexecute`| Ok | Não disponível | Não disponível
 
 Referências:
-[BlackTDN](http://www.blacktdn.com.br/2011/04/protheus-executando-aplicacoes-externas.html)
+[WaitRunSrv](http://www.blacktdn.com.br/2011/04/protheus-executando-aplicacoes-externas.html)
 [Tudo em AdvPL](https://siga0984.wordpress.com/2016/09/14/aplicacoes-externas-no-advpl-parte-01/)
 [Tudo em AdvPL](https://siga0984.wordpress.com/2016/09/26/aplicacoes-externas-no-advpl-parte-02/)
 [WinExec](http://tdn.totvs.com/display/tec/WinExec)
