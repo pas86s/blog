@@ -48,9 +48,9 @@ Então considerando o caso mais simples, utilizando o aplicativo smartclient.exe
 		*	10 - Posição padrão da aplicação
 		*	11 - Força minimização independente da aplicação executada, maximizada
 	Exemplos:
-		`ShellExecute( "open", "c:\temp\arquivo.txt", "", "c:\temp\", 1)`	
-		`ShellExecute( "open", "c:\temp\pdftk.exe", "arqEntrada1.pdf arqEntrada2.pdf cat output arqSaida.pdf", "c:\temp\", 1)`	
-		`ShellExecute( "open", "c:\temp\pdftk.exe arqEntrada1.pdf arqEntrada2.pdf cat output arqSaida.pdf", "", "c:\temp\", 1)`	
+		ShellExecute( "open", "c:\temp\arquivo.txt", "", "c:\temp\", 1)
+		ShellExecute( "open", "c:\temp\pdftk.exe", "arqEntrada1.pdf arqEntrada2.pdf cat output arqSaida.pdf", "c:\temp\", 1)
+		ShellExecute( "open", "c:\temp\pdftk.exe arqEntrada1.pdf arqEntrada2.pdf cat output arqSaida.pdf", "", "c:\temp\", 1)	
 	
 	WaitRun (uso detalhado nas referências)
 	WinExec (uso detalhado nas referências)
@@ -64,7 +64,7 @@ Então considerando o caso mais simples, utilizando o aplicativo smartclient.exe
 	Path         : Onde, no server, a função deverá ser executada
 	Retorna      : .T. Se conseguiu executar o Comando, caso contrário, .F.
 	Exemplo:
-		`WaitRunSrv( "c:\pastaservidor\pdftk.exe arqEntrada1.pdf arqEntrada2.pdf cat output arqSaida.pdf", .t. "c:\pastaservidor\")`	
+		WaitRunSrv( "c:\pastaservidor\pdftk.exe arqEntrada1.pdf arqEntrada2.pdf cat output arqSaida.pdf", .t. "c:\pastaservidor\")
 	
 E se houver a necessidade de usar um aplicativo que está instalado na máquina do usuário, mas o arquivo que vai ser usado neste aplicativo está no servidor? Neste caso utilizam-se de funções que copiam os arquivos de um lado para o outro (no caso copie o arquivo que vai ser usado do servidor para o cliente). São estas as funções:
 
@@ -107,26 +107,15 @@ E se houver a necessidade de usar um aplicativo que está instalado na máquina 
 
 Referências:
 [BlackTDN](http://www.blacktdn.com.br/2011/04/protheus-executando-aplicacoes-externas.html)
-
 [Tudo em AdvPL](https://siga0984.wordpress.com/2016/09/14/aplicacoes-externas-no-advpl-parte-01/)
-
 [Tudo em AdvPL](https://siga0984.wordpress.com/2016/09/26/aplicacoes-externas-no-advpl-parte-02/)
-
 [WinExec](http://tdn.totvs.com/display/tec/WinExec)
-
 [WaitRun](http://tdn.totvs.com/display/tec/WaitRun)
-
 [ShellExecute](http://tdn.totvs.com/display/tec/ShellExecute)
-
 [StartJob](https://tdn.totvs.com/display/tec/StartJob)
-
 [CpyS2T](https://tdn.totvs.com/display/tec/CpyS2T)
-
 [CpyT2S](https://tdn.totvs.com/display/tec/CpyT2S)
-
 [CpyS2TEX](https://tdn.totvs.com/display/tec/CpyS2TEX)
-
 [IsBlind](https://tdn.totvs.com/pages/releaseview.action?pageId=6814878)
-
 [PDF Toolkit](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)
 
